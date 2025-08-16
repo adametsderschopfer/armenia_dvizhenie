@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <p className="text-[16px] max-w-100 text-[red]">
+        <p className="text-[16px] max-w-100 text-surface-quaternary">
             Артак — агроэкономист, фермер, активист. Основал кооператив из 15 фермеров, чтобы защитить права крестьян.
             Выступал против незаконного захвата земли, организовывал местные митинги.
         </p>

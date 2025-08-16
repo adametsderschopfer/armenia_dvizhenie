@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+    --color-*: initial; /*Break default colors*/
+
+    /*Surface*/
+    --color-s-white: #FFFFFF;
+    --color-s-primary: #F7F8FA;
+    --color-s-secondary: #183A68;
+    --color-s-tertiary: #EAF2F9;
+    --color-s-quaternary: #9A1915;
+
+    /*Text*/
+    --color-t-primary: #FFFFFF;
+    --color-t-secondary: #0A0A0A;
+    --color-t-tertiary: #183A68;
+    --color-t-quaternary: #FFFFFF66;
+    --color-t-quinary: #0A0A0A66;
+}
+
 @layer base {
     * {
         font-family: var(--font-freesans), sans;
