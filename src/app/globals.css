@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+    /*Colors*/
     --color-*: initial; /*Break default colors*/
 
     /*Surface*/
@@ -16,11 +17,34 @@
     --color-t-tertiary: #183A68;
     --color-t-quaternary: #FFFFFF66;
     --color-t-quinary: #0A0A0A66;
+
+    /*Spacing*/
+    --spacing: 5px;
+
+    /*Text size*/
+    --text-xxl: 64px;
+    --text-xxl--line-height: 100%;
+
+    --text-xl: 42px;
+    --text-xl--line-height: 100%;
+
+    --text-lg: 24px;
+    --text-lg--line-height: 100%;
+
+    --text-base: 16px;
+    --text-base--line-height: 100%;
+
+    --text-sm: 14px;
+    --text-sm--line-height: 100%;
 }
 
 @layer base {
     * {
         font-family: var(--font-freesans), sans;
+        letter-spacing: -2px;
     }
 }
 
+.container {
+    padding: calc(var(--spacing) * 8);
+}
