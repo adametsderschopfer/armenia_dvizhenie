@@ -7,6 +7,7 @@
     --color-black: #0A0A0A;
     --color-primary: #F7F8FA;
     --color-secondary: #EAF2F9;
+    --color-tertiary: #B1CFE833;
     --color-danger: #9A1915;
     --color-accent: #183A68;
 
@@ -47,7 +48,7 @@
     max-width: 1440px;
     margin-inline: auto;
 
-    @apply p-4 md:p-8
+    @apply px-4 md:px-8;
 }
 
 .blurred-card {
@@ -73,3 +74,14 @@
     transform: scale(0.98);
 }
 
+.icon-tag {
+    @apply flex items-center justify-center uppercase text-accent font-bold text-sm bg-tertiary;
+}
+
+.icon-tag-text {
+    @apply py-4 px-5;
+}
+
+.icon-tag-icon {
+    @apply rounded-full w-[54px] h-[54px];
+}

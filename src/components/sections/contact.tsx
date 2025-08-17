@@ -8,7 +8,7 @@ export const ContactSection = () => {
             className="bg-top bg-cover bg-[image:url('@/assets/bgs/contact-section.jpg')]"
         >
             <div className="bg-black/20">
-                <div className="container">
+                <div className="container py-8">
                     <SectionHead
                         number={8}
                         title={"Контакты"}
