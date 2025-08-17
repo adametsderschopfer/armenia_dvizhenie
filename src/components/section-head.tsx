@@ -16,7 +16,7 @@ export const SectionHead: FC<ISectionHeadProps> = (
     return <div
         className={[
             dark ? "text-lack border-b-secondary" : "text-white border-b-white/40",
-            "pb-4 mb-8 border-b-1 font-bold"
+            "uppercase pb-4 mb-8 border-b-1 font-bold"
         ].join(" ")}
     >#{number} / {title}</div>
 }
