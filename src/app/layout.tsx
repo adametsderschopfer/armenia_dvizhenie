@@ -4,6 +4,10 @@ import localFont from "next/font/local";
 import {FC, PropsWithChildren} from "react";
 
 import "./globals.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const freeSansFont = localFont({
     src: [

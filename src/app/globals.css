@@ -85,3 +85,11 @@
 .icon-tag-icon {
     @apply rounded-full w-[54px] h-[54px];
 }
+
+.big-card-slide-active {
+    max-width: 670px !important;
+}
+
+.big-card-slide-active img {
+    height: 404px;
+}
