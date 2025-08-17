@@ -3,20 +3,12 @@
 @theme {
     /*Colors*/
     --color-*: initial; /*Break default colors*/
-
-    /*Surface*/
-    --color-s-white: #FFFFFF;
-    --color-s-primary: #F7F8FA;
-    --color-s-secondary: #183A68;
-    --color-s-tertiary: #EAF2F9;
-    --color-s-quaternary: #9A1915;
-
-    /*Text*/
-    --color-t-primary: #FFFFFF;
-    --color-t-secondary: #0A0A0A;
-    --color-t-tertiary: #183A68;
-    --color-t-quaternary: #FFFFFF66;
-    --color-t-quinary: #0A0A0A66;
+    --color-white: #FFFFFF;
+    --color-black: #0A0A0A;
+    --color-primary: #F7F8FA;
+    --color-secondary: #EAF2F9;
+    --color-danger: #9A1915;
+    --color-accent: #183A68;
 
     /*Spacing*/
     --spacing: 5px;
@@ -29,22 +21,50 @@
     --text-xl--line-height: 100%;
 
     --text-lg: 24px;
-    --text-lg--line-height: 100%;
+    --text-lg--line-height: 105%;
 
     --text-base: 16px;
-    --text-base--line-height: 100%;
+    --text-base--line-height: 120%;
 
     --text-sm: 14px;
     --text-sm--line-height: 100%;
+
+    --text-thin: 10px;
+    --text-thin--line-height: 100%;
 }
 
 @layer base {
     * {
         font-family: var(--font-freesans), sans;
-        letter-spacing: -2px;
     }
 }
 
 .container {
-    padding: calc(var(--spacing) * 8);
+    max-width: 1440px;
+    margin-inline: auto;
+
+    @apply p-4 md:p-8
+}
+
+.blurred-card {
+    @apply backdrop-blur-[15px] p-5  flex flex-col justify-between cursor-pointer;
+    transition: 200ms
+}
+
+.blurred-card:active {
+    transform: scale(1.05);
+}
+
+.blurred-card__text {
+    @apply text-white text-lg font-bold mt-10;
+    word-break: break-all;
+}
+
+.form-button {
+    @apply text-danger bg-white flex items-center justify-center gap-2 p-4 uppercase font-bold cursor-pointer;
+    transition: 200ms;
+}
+
+.form-button:active {
+    transform: scale(0.98);
 }
