@@ -34,6 +34,10 @@
 }
 
 @layer base {
+    body {
+        @apply bg-primary
+    }
+
     * {
         font-family: var(--font-freesans), sans;
     }
@@ -68,3 +72,4 @@
 .form-button:active {
     transform: scale(0.98);
 }
+

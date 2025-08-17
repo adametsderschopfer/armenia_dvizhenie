@@ -3,15 +3,20 @@ import {FC} from "react";
 interface ISectionHeadProps {
     number: number;
     title: string;
+    dark?: boolean;
 }
 
 export const SectionHead: FC<ISectionHeadProps> = (
     {
         number,
-        title
+        title,
+        dark = true
     }
 ) => {
     return <div
-        className="text-white pb-4 mb-8 border-b-1 border-b-white/40"
+        className={[
+            dark ? "text-lack border-b-secondary" : "text-white border-b-white/40",
+            "pb-4 mb-8 border-b-1 font-bold"
+        ].join(" ")}
     >#{number} / {title}</div>
 }

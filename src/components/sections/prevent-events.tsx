@@ -1,0 +1,3 @@
+export const PreventEventsSection = () => {
+    return (<></>)
+}
