@@ -21,6 +21,9 @@
     --text-xl: 42px;
     --text-xl--line-height: 100%;
 
+    --text-xlg: 36px;
+    --text-xlg--line-height: 100%;
+
     --text-lg: 24px;
     --text-lg--line-height: 105%;
 
@@ -41,6 +44,10 @@
 
     * {
         font-family: var(--font-freesans), sans;
+    }
+
+    h2 {
+        @apply text-xl font-bold text-white;
     }
 }
 

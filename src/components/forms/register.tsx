@@ -5,7 +5,7 @@ import {Textarea} from "@/components/ui/textarea";
 
 export const RegisterForm = () => {
     return <div className="bg-danger p-6 flex flex-col">
-        <h2 className="text-white text-xl break-all max-w-[446px] mb-12 xl:mb-auto font-bold">
+        <h2 className="break-all max-w-[446px] mb-12 xl:mb-auto">
             Зарегистрироваться для участия
         </h2>
 

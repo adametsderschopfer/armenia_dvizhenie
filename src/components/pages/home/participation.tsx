@@ -12,7 +12,7 @@ export const ParticipationSection = () => {
 
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
                 <div className="flex flex-col justify-between bg-white p-6 h-[667px]">
-                    <h2 className="text-black text-xl max-w-[410px] font-bold">
+                    <h2 className="text-black max-w-[410px]">
                         Хочешь быть частью перемен?
                     </h2>
 

@@ -9,7 +9,7 @@ export const FaqSection = () => {
                 title={"FAQ"}
             />
 
-            <h2 className="text-black text-xl mb-8 max-w-[530px] font-bold">
+            <h2 className="text-black mb-8 max-w-[530px]">
                 Вы задаёте вопросы — мы честно отвечаем
             </h2>
 

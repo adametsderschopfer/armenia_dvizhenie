@@ -15,7 +15,7 @@ export const ContactSection = () => {
                         dark={false}
                     />
 
-                    <h2 className="text-white text-xl mb-8 max-w-[442px] font-bold">
+                    <h2 className="mb-8 max-w-[442px]">
                         Вы спрашиваете — мы отвечаем честно
                     </h2>
 

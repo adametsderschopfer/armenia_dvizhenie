@@ -10,7 +10,7 @@ export const PreventEventsSection = () => {
                 title={"Прошедшие события"}
             />
 
-            <h2 className="text-black text-xl mb-8 font-bold">
+            <h2 className="text-black mb-8">
                 История наших шагов
             </h2>
 

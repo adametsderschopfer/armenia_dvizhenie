@@ -1,8 +1,11 @@
-import {ContactSection} from "@/components/sections/contact";
-import {FaqSection} from "@/components/sections/faq";
-import {PreventEventsSection} from "@/components/sections/prevent-events";
-import {ParticipationSection} from "@/components/sections/participation";
-import {EventsSection} from "@/components/sections/events";
+import {ContactSection} from "@/components/pages/home/contact";
+import {FaqSection} from "@/components/pages/home/faq";
+import {PreventEventsSection} from "@/components/pages/home/prevent-events";
+import {ParticipationSection} from "@/components/pages/home/participation";
+import {EventsSection} from "@/components/pages/home/events";
+import {GoalsAndMissionSection} from "@/components/pages/home/goals";
+import {AboutSection} from "@/components/pages/home/about";
+import {HeadNewsSection} from "@/components/pages/home/head-news";
 
 
 const eventSlides = [
@@ -43,6 +46,9 @@ const eventSlides = [
 export default function Home() {
     return (
         <>
+            <HeadNewsSection />
+            <AboutSection />
+            <GoalsAndMissionSection />
             <EventsSection slides={eventSlides} />
             <ParticipationSection />
             <PreventEventsSection />

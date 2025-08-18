@@ -5,7 +5,7 @@ import {Textarea} from "@/components/ui/textarea";
 
 export const FeedbackForm = () => {
     return <div className="bg-danger p-6 flex flex-col">
-        <h2 className="text-white text-xl max-w-[221px] mb-18 font-bold">
+        <h2 className="max-w-[221px] mb-18">
             Остались вопросы?
         </h2>
 

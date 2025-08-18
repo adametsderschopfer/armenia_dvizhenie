@@ -34,7 +34,7 @@ const RootLayout: FC<PropsWithChildren> = ({children}) => {
     return (
         <html lang="en">
         <body className={`${freeSansFont.variable}`}>
-        {children}
+        <main>{children}</main>
         </body>
         </html>
     );

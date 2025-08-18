@@ -9,7 +9,7 @@ interface IMessageCardProps {
 
 export const MessageCard: FC<IMessageCardProps> = ({title, description, href}) => {
     return (
-        <a href={href} className="p-6 mb-6 bg-secondary relative active:scale-[1.02] transition-[100ms]">
+        <a href={href} className="p-6 mb-6 bg-secondary relative active:scale-[1.02] duration-100">
             <div className="font-bold text-lg mb-3">{title}</div>
             <p className="text-black/40 text-base mb-12 lg:mb-24">{description}</p>
             <div className="gap-2 text-accent uppercase font-bold flex items-center">

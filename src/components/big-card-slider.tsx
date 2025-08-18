@@ -18,6 +18,7 @@ interface IBigCardSliderProps {
     slides: IBigCardSlide[]
 }
 
+// eslint-disable-next-line react/display-name
 export const BigCardSlider = forwardRef<SwiperClass, IBigCardSliderProps>(({slides}, ref) => {
     return (
         <Swiper
@@ -32,7 +33,7 @@ export const BigCardSlider = forwardRef<SwiperClass, IBigCardSliderProps>(({slid
             slideActiveClass={'big-card-slide-active'}
         >
             {slides.map((slide, index) => (
-                <SwiperSlide key={index} className="min-h-[404px] max-w-[325px] transition-[200ms]">
+                <SwiperSlide key={index} className="min-h-[404px] max-w-[325px] duration-200">
                     <a className="text-white block" href={slide.href}>
                         <div className="mb-4 relative">
                             <div
@@ -45,7 +46,7 @@ export const BigCardSlider = forwardRef<SwiperClass, IBigCardSliderProps>(({slid
                                 alt={slide.title}
                                 width={325}
                                 height={183}
-                                className="w-full transition-[200ms] object-cover h-[183px] group-active:h-[404px]"
+                                className="w-full duration-200 object-cover h-[183px] group-active:h-[404px]"
                             />
                         </div>
 
