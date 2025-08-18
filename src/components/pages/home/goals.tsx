@@ -4,7 +4,7 @@ import {BlurCard} from "@/components/blur-card";
 export const GoalsAndMissionSection = () => {
     return (
         <section
-            className="bg-top bg-cover bg-[image:url('@/assets/bgs/goals-and-mission.png')]"
+            className="bg-top bg-cover bg-[image:url('/bgs/goals-and-mission.png')]"
         >
             <div className="bg-black/20">
                 <div className="container py-8">
