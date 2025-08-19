@@ -5,6 +5,7 @@ import {SectionHead} from "@/components/widgets/section-head";
 import {Swiper, SwiperClass, SwiperSlide} from "swiper/react";
 import {Autoplay, EffectFade, Pagination} from "swiper/modules";
 import {ArrowTightIcon} from "@/assets/icons";
+import Link from "next/link";
 
 interface INewsSlide {
     title: string;
@@ -82,12 +83,12 @@ export const HeadNewsSection: FC<IHeadNewsSectionProps> = (
 
                 </Swiper>
 
-                <a
+                <Link
                     href="/"
                     className="flex items-center justify-center hover:bg-accent hover:text-white cursor-pointer duration-200 bg-white uppercase text-accent text-sm font-bold gap-2 py-4 sm:py-[33px] px-7 w-full sm:w-[initial]"
                 >
                     Все новости <ArrowTightIcon/>
-                </a>
+                </Link>
             </div>
 
             <div className="news-slider__pagination"></div>
