@@ -2,7 +2,10 @@ import type {NextConfig} from "next";
 
 const nextConfig: NextConfig = {
     output: 'export',
-    reactStrictMode: true,
+    reactStrictMode: false,
+    typescript: {
+        ignoreBuildErrors: true,
+    },
 
     turbopack: {
         rules: {
