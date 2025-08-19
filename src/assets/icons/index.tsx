@@ -10,6 +10,13 @@ import PositionPointIcon from "./position-point.svg"
 import QuoteIcon from "./quote.svg"
 import TentIcon from "./tent.svg"
 import TgIcon from "./tg.svg"
+import TelegramIcon from "./telegram.svg"
+import ViberIcon from "./viber.svg"
+import WhatsAppIcon from "./whatsapp.svg"
+import LogoIcon from "./logo.svg"
+import LogoAccentIcon from "./logo-accent.svg"
+import BurgerIcon from "./burger.svg"
+import CrossIcon from "./cross.svg"
 
 export {
     PhoneIcon,
@@ -24,4 +31,11 @@ export {
     QuoteIcon,
     TentIcon,
     TgIcon,
+    TelegramIcon,
+    ViberIcon,
+    WhatsAppIcon,
+    LogoIcon,
+    LogoAccentIcon,
+    BurgerIcon,
+    CrossIcon,
 }

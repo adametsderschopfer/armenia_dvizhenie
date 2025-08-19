@@ -8,8 +8,12 @@
     --color-primary: #F7F8FA;
     --color-secondary: #EAF2F9;
     --color-tertiary: #B1CFE833;
-    --color-danger: #9A1915;
-    --color-accent: #183A68;
+    --color-danger: #771139;
+    --color-accent: #4D71B6;
+
+    --breakpoint-lg: 1440px;
+    --breakpoint-md: 1024px;
+    --breakpoint-sm: 640px;
 
     /*Spacing*/
     --spacing: 5px;
@@ -47,20 +51,36 @@
     }
 
     h2 {
-        @apply text-xl font-bold text-white;
+        @apply text-[26px] leading-[100%] sm:text-xl font-bold text-white;
+        letter-spacing: -1px;
+    }
+}
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1920px;
     margin-inline: auto;
 
-    @apply px-4 md:px-8;
+    @apply px-2 md:px-8;
 }
 
 .blurred-card {
-    @apply backdrop-blur-[15px] p-5  flex flex-col justify-between cursor-pointer;
+    @apply backdrop-blur-[15px] gap-3 p-6 lg:p-5 flex flex-row lg:flex-col items-center lg:items-start justify-between cursor-pointer;
     transition: 200ms
+}
+
+.blurred-card svg {
+    min-width: 40px;
 }
 
 .blurred-card:active {
@@ -68,7 +88,7 @@
 }
 
 .blurred-card__text {
-    @apply text-white text-lg font-bold mt-10;
+    @apply text-white text-lg font-bold lg:mt-10 flex sm:flex-1 lg:flex-0 sm:justify-start justify-between;
     word-break: break-all;
 }
 
@@ -99,4 +119,26 @@
 
 .big-card-slide-active img {
     height: 404px;
+}
+
+.news-slider__pagination {
+    position: absolute !important;
+    bottom: 40px !important;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.news-slider__pagination-bullet {
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    @apply bg-white/40
+}
+
+.news-slider__pagination-bullet-active {
+    @apply bg-white
 }

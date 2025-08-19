@@ -1,7 +1,7 @@
 "use client"
 
-import {SectionHead} from "@/components/section-head";
-import {BigCardSlider, IBigCardSlide} from "@/components/big-card-slider";
+import {SectionHead} from "@/components/widgets/section-head";
+import {BigCardSlider, IBigCardSlide} from "@/components/widgets/big-card-slider";
 import {FC, useRef} from "react";
 import {SwiperClass} from "swiper/react";
 import {ArrowTightIcon} from "@/assets/icons";
@@ -27,26 +27,26 @@ export const EventsSection: FC<IEventsSectionProps> = ({slides}) => {
     }
 
     return (
-        <section className="bg-accent pt-8 pb-15 mb-15">
+        <section className="bg-accent pt-8 mb-15">
             <div className="container">
                 <SectionHead
                     number={4}
                     title={"СОБЫТИЯ"}
-                    dark={false}
+                    variant={'white'}
                 />
 
-                <div className="flex justify-between items-center mb-7">
+                <div className="flex justify-between items-start sm:items-center flex-row mb-7">
                     <h2 className="max-w-[465px]">Живое движение — живые шаги</h2>
 
-                    <div className="text-white flex items-center content-center gap-2">
-                        <div onClick={handlePrevSlide}
-                             className="duration-200 hover:bg-white hover:text-accent cursor-pointer flex items-center justify-center w-10 h-10 border-1 border-white/40">
-                            <ArrowTightIcon className={"rotate-180"}/></div>
-                        <div
-                            onClick={handleNextSlide}
-                            className="duration-200 hover:bg-white hover:text-accent cursor-pointer flex items-center justify-center w-10 h-10 border-1 border-white/40">
-                            <ArrowTightIcon/></div>
-                    </div>
+                    {/*<div className="text-white flex items-center content-center gap-2 pt-15 sm:pt-0">*/}
+                    {/*    <div onClick={handlePrevSlide}*/}
+                    {/*         className="duration-200 hover:bg-white hover:text-accent cursor-pointer flex items-center justify-center w-10 h-10 border-1 border-white/40">*/}
+                    {/*        <ArrowTightIcon className={"rotate-180"}/></div>*/}
+                    {/*    <div*/}
+                    {/*        onClick={handleNextSlide}*/}
+                    {/*        className="duration-200 hover:bg-white hover:text-accent cursor-pointer flex items-center justify-center w-10 h-10 border-1 border-white/40">*/}
+                    {/*        <ArrowTightIcon/></div>*/}
+                    {/*</div>*/}
                 </div>
 
                 <BigCardSlider ref={bigCardSliderRef} slides={slides}/>

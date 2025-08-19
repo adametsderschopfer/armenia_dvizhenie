@@ -8,6 +8,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import {Header} from "@/components/widgets/header";
+import {Footer} from "@/components/widgets/footer/footer";
 
 const freeSansFont = localFont({
     src: [
@@ -34,7 +36,11 @@ const RootLayout: FC<PropsWithChildren> = ({children}) => {
     return (
         <html lang="en">
         <body className={`${freeSansFont.variable}`}>
-        <main>{children}</main>
+        <Header />
+        <main>
+            {children}
+        </main>
+        <Footer />
         </body>
         </html>
     );

@@ -1,5 +1,5 @@
-import {SectionHead} from "@/components/section-head";
-import {BlurCard} from "@/components/blur-card";
+import {SectionHead} from "@/components/widgets/section-head";
+import {BlurCard} from "@/components/widgets/blur-card";
 
 export const GoalsAndMissionSection = () => {
     return (
@@ -7,11 +7,11 @@ export const GoalsAndMissionSection = () => {
             className="bg-top bg-cover bg-[image:url('/bgs/goals-and-mission.png')]"
         >
             <div className="bg-black/20">
-                <div className="container py-8">
+                <div className="container py-10 lg:py-8">
                     <SectionHead
                         number={3}
                         title={"ЦЕЛИ И МИССИЯ"}
-                        dark={false}
+                        variant={'white'}
                     />
 
                     <h2 className="mb-8 max-w-[733px]">

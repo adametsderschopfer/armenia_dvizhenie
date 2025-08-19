@@ -1,4 +1,4 @@
-import {SectionHead} from "@/components/section-head";
+import {SectionHead} from "@/components/widgets/section-head";
 import {MailDogIcon, PhoneIcon, PositionPointIcon, TgIcon} from "@/assets/icons";
 import {FeedbackForm} from "@/components/forms/feedback";
 
@@ -8,19 +8,21 @@ export const ContactSection = () => {
             className="bg-top bg-cover bg-[image:url('/bgs/contact-section.jpg')]"
         >
             <div className="bg-black/20">
-                <div className="container py-8">
+                <div className="container py-10 lg:py-8">
                     <SectionHead
                         number={8}
                         title={"Контакты"}
-                        dark={false}
+                        variant={'white'}
                     />
 
-                    <h2 className="mb-8 max-w-[442px]">
-                        Вы спрашиваете — мы отвечаем честно
+                    <h2 className="mb-6 sm:mb-8">
+                        Вы спрашиваете — <br/> мы отвечаем честно
                     </h2>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <FeedbackForm/>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 md:gap-2 lg:gap-4 -order-1 lg:order-1">
                             <div className="blurred-card">
                                 <PhoneIcon/>
                                 <p className="blurred-card__text">+374 XX XXX XXX</p>
@@ -38,8 +40,6 @@ export const ContactSection = () => {
                                 <p className="blurred-card__text">Ереван, Абовяна, 12, офис 3</p>
                             </div>
                         </div>
-
-                        <FeedbackForm/>
                     </div>
                 </div>
             </div>

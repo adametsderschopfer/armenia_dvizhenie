@@ -43,7 +43,8 @@ export const Checkbox: FC<ICheckboxProps> = (
                   </svg>
                 </span>
             </label>
-            <label className="cursor-pointer uppercase font-bold text-thin text-white ml-2"
+
+            <label className="cursor-pointer uppercase font-bold text-thin text-white ml-2 mt-[2px]"
                    htmlFor="ripple-on"
             >
                 {children}

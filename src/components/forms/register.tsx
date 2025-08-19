@@ -1,11 +1,10 @@
 import {Input} from "@/components/ui/input";
 import {Checkbox} from "@/components/ui/checkbox";
 import {ArrowTightIcon} from "@/assets/icons";
-import {Textarea} from "@/components/ui/textarea";
 
 export const RegisterForm = () => {
     return <div className="bg-danger p-6 flex flex-col">
-        <h2 className="break-all max-w-[446px] mb-12 xl:mb-auto">
+        <h2 className="max-w-[446px] mb-6 md:mb-48 lg:mb-85">
             Зарегистрироваться для участия
         </h2>
 

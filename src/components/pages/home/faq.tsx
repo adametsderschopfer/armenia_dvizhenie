@@ -1,15 +1,15 @@
-import {SectionHead} from "@/components/section-head";
+import {SectionHead} from "@/components/widgets/section-head";
 import {Accordion} from "@/components/ui/accordion";
 
 export const FaqSection = () => {
     return (
-        <section className="container mb-15 lg:mb-30">
+        <section className="container mb-6 md:mb-10 lg:mb-30">
             <SectionHead
                 number={7}
                 title={"FAQ"}
             />
 
-            <h2 className="text-black mb-8 max-w-[530px]">
+            <h2 className="text-black mb-6 sm:mb-8 max-w-[530px]">
                 Вы задаёте вопросы — мы честно отвечаем
             </h2>
 

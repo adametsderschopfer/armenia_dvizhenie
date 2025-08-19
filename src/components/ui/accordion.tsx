@@ -10,7 +10,7 @@ export const Accordion: FC<IAccordionProps> = ({title, children, ...props}) => (
     <details
         {...props}
         className={[
-            "group bg-white py-4 px-6 cursor-pointer duration-200 relative open:bg-accent open:text-white",
+            "group bg-white py-6 sm:py-4 px-4 sm:px-6 cursor-pointer duration-200 relative open:bg-accent open:text-white",
             props.className
         ].join(" ")}
     >
@@ -19,12 +19,12 @@ export const Accordion: FC<IAccordionProps> = ({title, children, ...props}) => (
         >
             {title}
             <PlusIcon
-                className="absolute right-[19px] top-[19px] duration-200 text-white group-open:rotate-45 group-open:text-accent z-[1]"/>
+                className="absolute right-[29px] sm:right-[19px] top-[29px] sm:top-[19px] duration-200 text-white group-open:rotate-45 group-open:text-accent z-[1]"/>
             <span
-                className="absolute right-[10px] top-[10px] w-[46px] h-[46px] bg-accent duration-200 group-open:bg-white"
+                className="absolute right-[20px] sm:right-[10px] top-[20px] sm:top-[10px] w-[46px] h-[46px] bg-accent duration-200 group-open:bg-white"
             />
         </summary>
-        <p className="mt-3 max-w-[300px] leading-[120%] text-white/40">
+        <p className="mt-3 mb-0 sm:mb-2 max-w-[300px] leading-[120%] text-white/40">
             {children}
         </p>
     </details>

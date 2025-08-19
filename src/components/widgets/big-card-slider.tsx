@@ -29,11 +29,11 @@ export const BigCardSlider = forwardRef<SwiperClass, IBigCardSliderProps>(({slid
                 ref.current = s;
             }}
             loop={true}
-            noSwiping={true}
             slideActiveClass={'big-card-slide-active'}
+            wrapperClass={'pb-15'}
         >
             {slides.map((slide, index) => (
-                <SwiperSlide key={index} className="min-h-[404px] max-w-[325px] duration-200">
+                <SwiperSlide key={index} className="min-h-[404px] sm:max-w-[325px] duration-200">
                     <a className="text-white block" href={slide.href}>
                         <div className="mb-4 relative">
                             <div
@@ -46,7 +46,7 @@ export const BigCardSlider = forwardRef<SwiperClass, IBigCardSliderProps>(({slid
                                 alt={slide.title}
                                 width={325}
                                 height={183}
-                                className="w-full duration-200 object-cover h-[183px] group-active:h-[404px]"
+                                className="w-full object-cover h-[404px] sm:h-[183px]"
                             />
                         </div>
 
