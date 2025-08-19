@@ -28,10 +28,10 @@ export const Footer = () => {
                     className="mb-6!"
                 />
                 <div className="gap-3 flex flex-col font-bold uppercase">
-                    <a href="">НОВОСТИ</a>
-                    <a href="">ЦЕЛИ И МИССИЯ</a>
-                    <a href="">СОБЫТИЯ</a>
-                    <a href="">КОНТАКТЫ</a>
+                    <a href="#news" className="hover:underline">НОВОСТИ</a>
+                    <a href="#goals" className="hover:underline">ЦЕЛИ И МИССИЯ</a>
+                    <a href="#events" className="hover:underline">СОБЫТИЯ</a>
+                    <a href="#contacts" className="hover:underline">КОНТАКТЫ</a>
                 </div>
             </div>
 
@@ -42,9 +42,9 @@ export const Footer = () => {
                     className="mb-6"
                 />
                 <div className="gap-3 flex flex-col font-bold uppercase">
-                    <a href="">+374 XX XXX XXX</a>
-                    <a href="">hello@вашдомен.am</a>
-                    <a href="">Ереван, Абовяна, 12, офис 3</a>
+                    <a href="" className="hover:underline">+374 XX XXX XXX</a>
+                    <a href="" className="hover:underline">hello@вашдомен.am</a>
+                    <a href="" className="hover:underline">Ереван, Абовяна, 12, офис 3</a>
                 </div>
             </div>
 
@@ -55,9 +55,9 @@ export const Footer = () => {
                     className="mb-6"
                 />
                 <div className="gap-3 flex flex-col font-bold uppercase">
-                    <a href="">Политика обработки персональных данных</a>
-                    <a href="">Согласие на обработку персональных данных</a>
-                    <a href="">Политика обработки файлов cookie</a>
+                    <a href="" className="hover:underline">Политика обработки персональных данных</a>
+                    <a href="" className="hover:underline">Согласие на обработку персональных данных</a>
+                    <a href="" className="hover:underline">Политика обработки файлов cookie</a>
                 </div>
             </div>
         </footer>

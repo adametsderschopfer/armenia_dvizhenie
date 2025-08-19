@@ -44,6 +44,7 @@ export const HeadNewsSection: FC<IHeadNewsSectionProps> = (
             }}
         >
             <SectionHead
+                id={'news'}
                 className="max-w-272"
                 variant={'white'}
                 number={1}

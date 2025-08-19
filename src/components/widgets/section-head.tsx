@@ -1,6 +1,7 @@
 import {FC} from "react";
 
 interface ISectionHeadProps {
+    id?: string,
     className?: string;
     number?: number;
     title: string;
@@ -9,6 +10,7 @@ interface ISectionHeadProps {
 
 export const SectionHead: FC<ISectionHeadProps> = (
     {
+        id,
         number,
         title,
         variant = 'dark',
@@ -22,6 +24,7 @@ export const SectionHead: FC<ISectionHeadProps> = (
     }
 
     return <div
+        id={id}
         className={[
             variants[variant],
             "uppercase pb-3 sm:pb-4 mb-6 sm:mb-8 border-b-1 font-bold",

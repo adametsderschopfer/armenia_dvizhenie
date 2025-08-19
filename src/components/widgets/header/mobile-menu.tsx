@@ -36,10 +36,10 @@ export const MobileMenu: FC<IMobileMenuProps> = ({shown, onClose}) => {
                     <LogoAccentIcon className="mb-6" />
 
                     <div className="flex flex-col gap-4 text-base font-bold uppercase mt-6">
-                        <a href="#" className="hover:underline">Новости</a>
-                        <a href="#" className="hover:underline">Цели и миссия</a>
-                        <a href="#" className="hover:underline">События</a>
-                        <a href="#" className="hover:underline">Контакты</a>
+                        <a href="#news" className="hover:underline">Новости</a>
+                        <a href="#goals" className="hover:underline">Цели и миссия</a>
+                        <a href="#events" className="hover:underline">События</a>
+                        <a href="#contacts" className="hover:underline">Контакты</a>
                     </div>
 
                     <div className="flex flex-col mt-auto gap-6">

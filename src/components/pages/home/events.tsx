@@ -30,6 +30,7 @@ export const EventsSection: FC<IEventsSectionProps> = ({slides}) => {
         <section className="bg-accent pt-8 mb-15">
             <div className="container">
                 <SectionHead
+                    id={'events'}
                     number={4}
                     title={"СОБЫТИЯ"}
                     variant={'white'}

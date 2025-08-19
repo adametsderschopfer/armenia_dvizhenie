@@ -10,6 +10,7 @@ export const ContactSection = () => {
             <div className="bg-black/20">
                 <div className="container py-10 lg:py-8">
                     <SectionHead
+                        id={'contacts'}
                         number={8}
                         title={"Контакты"}
                         variant={'white'}

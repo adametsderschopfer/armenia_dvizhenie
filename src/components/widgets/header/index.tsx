@@ -24,10 +24,10 @@ export const Header = () => {
                     <LogoIcon/>
 
                     <div className="uppercase text-white text-sm gap-4 lg:flex font-bold hidden">
-                        <a href="" className="hover:underline">НОВОСТИ</a>
-                        <a href="" className="hover:underline">ЦЕЛИ И МИССИЯ</a>
-                        <a href="" className="hover:underline">СОБЫТИЯ</a>
-                        <a href="" className="hover:underline">КОНТАКТЫ</a>
+                        <a href="#news" className="hover:underline">НОВОСТИ</a>
+                        <a href="#goals" className="hover:underline">ЦЕЛИ И МИССИЯ</a>
+                        <a href="#events" className="hover:underline">СОБЫТИЯ</a>
+                        <a href="#contacts" className="hover:underline">КОНТАКТЫ</a>
                     </div>
                 </div>
 
