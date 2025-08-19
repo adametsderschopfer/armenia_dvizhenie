@@ -4,7 +4,7 @@ import {ArrowTightIcon} from "@/assets/icons";
 
 export const PreventEventsSection = () => {
     return (<section>
-        <div className="container mb-6 md:mb-10 lg:mb-30 overflow-hidden">
+        <div className="container mb-20 lg:mb-30 overflow-hidden">
             <SectionHead
                 number={6}
                 title={"Прошедшие события"}

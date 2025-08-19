@@ -27,13 +27,13 @@ export const MobileMenu: FC<IMobileMenuProps> = ({shown, onClose}) => {
             >
                 <div className="h-full flex flex-col bg-white p-6 relative">
                     <button
-                        className="absolute top-6 right-6 cursor-pointer z-10"
+                        className="absolute top-3 right-3 cursor-pointer z-10"
                         onClick={onClose}
                     >
                         <CrossIcon />
                     </button>
 
-                    <LogoAccentIcon className="mb-6" />
+                    <LogoAccentIcon className="mt-[12px] mb-6" />
 
                     <div className="flex flex-col gap-4 text-base font-bold uppercase mt-6">
                         <a href="#news" className="hover:underline">Новости</a>

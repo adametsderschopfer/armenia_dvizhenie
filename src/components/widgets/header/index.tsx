@@ -19,7 +19,7 @@ export const Header = () => {
 
     return (
         <>
-            <header className="fixed z-1 top-0 flex w-full bg-white/40 backdrop-blur-md pl-6 sm:pl-8">
+            <header className="fixed z-3 top-0 flex w-full bg-white/40 backdrop-blur-md pl-6 sm:pl-8">
                 <div className="py-4 flex items-center gap-16">
                     <LogoIcon/>
 

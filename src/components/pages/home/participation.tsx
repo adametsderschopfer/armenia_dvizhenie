@@ -4,13 +4,14 @@ import {ArrowFallIcon, CompassIcon, TentIcon} from "@/assets/icons";
 
 export const ParticipationSection = () => {
     return (
-        <section className="container mb-6 md:mb-10 lg:mb-30">
+        <section className="container mb-20 lg:mb-30">
             <SectionHead
                 number={5}
                 title={"Участие"}
+                className={"mb-4! sm:mb-8"}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4">
                 <div className="flex flex-col justify-between bg-white p-6 gap-6">
                     <h2 className="text-black max-w-[410px]">
                         Хочешь быть частью перемен?

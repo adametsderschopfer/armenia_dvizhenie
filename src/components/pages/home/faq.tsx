@@ -3,17 +3,17 @@ import {Accordion} from "@/components/ui/accordion";
 
 export const FaqSection = () => {
     return (
-        <section className="container mb-6 md:mb-10 lg:mb-30">
+        <section className="container mb-10 lg:mb-30">
             <SectionHead
                 number={7}
                 title={"FAQ"}
             />
 
             <h2 className="text-black mb-6 sm:mb-8 max-w-[530px]">
-                Вы задаёте вопросы — мы честно отвечаем
+                Вы задаёте вопросы — <br/> мы честно отвечаем
             </h2>
 
-            <div className="flex flex-col gap-4 pl-0 lg:pl-78">
+            <div className="flex flex-col gap-2 sm:gap-4 pl-0 lg:pl-78">
                 <Accordion title={"Кто вас финансирует?"} open>
                     Текущая власть подавляет голос народа — и на улицах, и в парламенте.
                 </Accordion>

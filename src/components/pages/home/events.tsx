@@ -27,7 +27,7 @@ export const EventsSection: FC<IEventsSectionProps> = ({slides}) => {
     }
 
     return (
-        <section className="bg-accent pt-8 mb-15">
+        <section className="bg-accent pt-10 lg:pt-8 mb-10 lg:mb-15">
             <div className="container">
                 <SectionHead
                     id={'events'}
