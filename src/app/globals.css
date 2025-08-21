@@ -119,24 +119,21 @@
     @apply rounded-full w-[54px] h-[54px];
 }
 
-.big-card-slide {
+.card-slide {
     @media (width >= 1440px) {
         width: 25% !important;
     }
 }
 
-.big-card-slide-active {
+.card-slide--big {
     @media (width >= 1440px) {
         width: 50% !important;
-        transition: 200ms;
     }
 }
 
-
-.big-card-slide-active img {
+.card-slide--big img {
     @media (width >= 1440px) {
         height: 404px;
-        transition: 200ms;
     }
 }
 
