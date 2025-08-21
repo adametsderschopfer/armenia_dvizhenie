@@ -20,7 +20,7 @@ export const SectionHead: FC<ISectionHeadProps> = (
     const variants = {
         white: "text-white border-b-white/40",
         dark: "text-black border-b-secondary",
-        gray: "text-black/40 border-b-black/40"
+        gray: "text-black/40 border-b-quaternary"
     }
 
     return <div

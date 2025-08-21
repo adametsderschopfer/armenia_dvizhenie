@@ -23,17 +23,31 @@ export const BigCardSlider = forwardRef<SwiperClass, IBigCardSliderProps>(({slid
     return (
         <Swiper
             spaceBetween={20}
-            slidesPerView={'auto'}
+            slidesPerView={"auto"}
             onSwiper={(s) => {
                 // @ts-ignore
                 ref.current = s;
             }}
-            loop={true}
             slideActiveClass={'big-card-slide-active'}
             wrapperClass={'pb-10 lg:pb-15'}
+            loop={true}
+            breakpoints={{
+                1440: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+            }}
         >
             {slides.map((slide, index) => (
-                <SwiperSlide key={index} className="min-h-[404px] sm:max-w-[325px] duration-200">
+                <SwiperSlide key={index} className="big-card-slide min-h-[404px] duration-200">
                     <a className="text-white block" href={slide.href}>
                         <div className="mb-4 relative">
                             <div

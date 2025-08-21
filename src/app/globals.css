@@ -8,8 +8,11 @@
     --color-primary: #F7F8FA;
     --color-secondary: #EAF2F9;
     --color-tertiary: #B1CFE833;
+    --color-quaternary: #E3E2E2;
     --color-danger: #771139;
     --color-accent: #4D71B6;
+
+    --blur-sm: 10px;
 
     --breakpoint-lg: 1440px;
     --breakpoint-md: 1024px;
@@ -19,14 +22,17 @@
     --spacing: 5px;
 
     /*Text size*/
-    --text-xxl: 64px;
-    --text-xxl--line-height: 100%;
+    --text-2xl: 64px;
+    --text-2xl--line-height: 100%;
 
     --text-xl: 42px;
     --text-xl--line-height: 100%;
 
     --text-xlg: 36px;
     --text-xlg--line-height: 100%;
+
+    --text-xls: 26px;
+    --text-xls--line-height: 105%;
 
     --text-lg: 24px;
     --text-lg--line-height: 105%;
@@ -51,7 +57,7 @@
     }
 
     h2 {
-        @apply text-[26px] leading-[100%] md:text-xl font-bold text-white;
+        @apply text-xls md:text-xl font-bold text-white;
         letter-spacing: -1px;
     }
 }
@@ -75,7 +81,7 @@
 }
 
 .blurred-card {
-    @apply backdrop-blur-[15px] gap-3 p-6 lg:p-5 flex flex-row lg:flex-col items-center lg:items-start justify-between cursor-pointer;
+    @apply backdrop-blur-sm gap-3 p-6 lg:p-5 flex flex-row lg:flex-col items-center lg:items-start justify-between cursor-pointer;
     transition: 200ms
 }
 
@@ -88,7 +94,7 @@
 }
 
 .blurred-card__text {
-    @apply text-white text-lg font-bold lg:mt-10 flex sm:flex-1 lg:flex-0 sm:justify-start justify-between;
+    @apply text-white text-lg font-bold ml-auto lg:ml-0 lg:mt-10 flex sm:justify-start justify-between;
     word-break: break-all;
 }
 
@@ -113,18 +119,31 @@
     @apply rounded-full w-[54px] h-[54px];
 }
 
-.big-card-slide-active {
-    max-width: 670px !important;
+.big-card-slide {
+    @media (width >= 1440px) {
+        width: 25% !important;
+    }
 }
 
+.big-card-slide-active {
+    @media (width >= 1440px) {
+        width: 50% !important;
+        transition: 200ms;
+    }
+}
+
+
 .big-card-slide-active img {
-    height: 404px;
+    @media (width >= 1440px) {
+        height: 404px;
+        transition: 200ms;
+    }
 }
 
 .news-slider__pagination {
     position: absolute !important;
 
-    @apply bottom-6! sm:bottom-4! md:bottom-8!;
+    @apply bottom-6! sm:bottom-4! md:bottom-8! left-[50%];
 
     display: flex;
     flex-direction: row;
@@ -142,4 +161,37 @@
 
 .news-slider__pagination-bullet-active {
     @apply bg-white
+}
+
+.contacts {
+    position: relative;
+}
+
+.contacts::after {
+    content: '';
+    background-image: url('/bgs/new-contact.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: rotateY(-180deg);
+    background-position: 0 -150px;
+    background-repeat: no-repeat;
+
+    @media (width < 1024) {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.card-triangle {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 50px solid currentColor;
 }

@@ -5,7 +5,7 @@ import {FeedbackForm} from "@/components/forms/feedback";
 export const ContactSection = () => {
     return (
         <section
-            className="bg-top bg-cover bg-[image:url('/bgs/contact-section.jpg')]"
+            className="contacts"
         >
             <div className="bg-black/20">
                 <div className="container py-10 lg:py-8">

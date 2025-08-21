@@ -1,6 +1,7 @@
-import {Input} from "@/components/ui/input";
+"use client"
 import {Checkbox} from "@/components/ui/checkbox";
 import {ArrowTightIcon} from "@/assets/icons";
+import {MaskedPhoneInput} from "@/components/ui/phone-input";
 
 export const RegisterForm = () => {
     return <div className="bg-danger p-6 flex flex-col">
@@ -8,7 +9,7 @@ export const RegisterForm = () => {
             Зарегистрироваться для участия
         </h2>
 
-        <Input placeholder={"Телефон *"}/>
+        <MaskedPhoneInput placeholder={"Телефон *"}/>
 
         <Checkbox className="mb-6">
             Я согласен с условиями политики конфиденциальности

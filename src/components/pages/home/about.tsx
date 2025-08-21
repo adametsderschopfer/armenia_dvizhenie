@@ -70,29 +70,31 @@ const AboutCard: FC<IAboutCardProps> = ({
                                             about,
                                             blockquote
                                         }) => (
-    <div className="sm:sticky top-16 flex gap-2 lg:gap-4 flex-col md:flex-row items-center md:items-stretch">
+    <div className="md:sticky top-16 flex gap-2 lg:gap-4 flex-col md:flex-row items-center md:items-stretch">
         <Image
             src={imageSrc}
             alt={fullName}
             width={355}
             height={462}
 
-            className="max-w-71 object-contain md:object-cover"
+            className="w-full md:max-w-71 object-contain md:object-cover"
         />
-        <div className="flex flex-col justify-between bg-white p-4 md:p-6">
-            <div className="flex justify-between flex-col lg:flex-row">
-                <div className="font-bold text-xlg sm:max-w-49 pr-4">{fullName}</div>
-                <p className="sm:max-w-59 text-black/40 text-base mt-3 mb-10 lg:mt-0 lg:mb-0">{about}</p>
-            </div>
-
-            {blockquote && (
-                <div className="flex flex-col sm:gap-2">
-                    <QuoteIcon/>
-                    <p className="text-base text-[18px] leading-[105%] md:text-lg font-bold indent-10 md:indent-15">
-                        {blockquote}
-                    </p>
+        <div className="w-full bg-white p-4 md:p-6">
+            <div className="flex flex-col justify-between h-full max-w-[880px]">
+                <div className="flex justify-between flex-col lg:flex-row">
+                    <div className="font-bold text-xlg sm:max-w-49 pr-4">{fullName}</div>
+                    <p className="sm:max-w-59 text-black/40 text-base mt-3 mb-10 lg:mt-0 lg:mb-0">{about}</p>
                 </div>
-            )}
+
+                {blockquote && (
+                    <div className="flex flex-col sm:gap-2">
+                        <QuoteIcon/>
+                        <p className="max-w-[640px] text-base text-[18px] leading-[105%] md:text-lg font-bold indent-10 md:indent-15">
+                            {blockquote}
+                        </p>
+                    </div>
+                )}
+            </div>
         </div>
     </div>
 )

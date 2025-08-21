@@ -17,8 +17,7 @@ export const MessageCard: FC<IMessageCardProps> = ({title, description, href}) =
                 <ArrowTightIcon/>
             </div>
 
-            <span
-                className="absolute -bottom-6 right-0 border-l-[30px] border-r-[30px] border-b-[30px] border-l-transparent border-b-transparent border-r-secondary"></span>
+            <span className="card-triangle text-secondary" />
         </a>
     )
 }
