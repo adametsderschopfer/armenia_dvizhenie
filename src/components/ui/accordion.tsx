@@ -24,7 +24,7 @@ export const Accordion: FC<IAccordionProps> = ({title, children, ...props}) => (
                 className="absolute right-[20px] sm:right-[10px] top-[20px] sm:top-[10px] w-[46px] h-[46px] bg-accent duration-200 group-open:bg-white group-hover:bg-white"
             />
         </summary>
-        <p className="mb-4 sm:mb-6 max-w-[300px] leading-[120%] text-white/40 px-4 sm:px-6">
+        <p className="mb-4 sm:mb-6 leading-[120%] text-white/40 px-4 sm:px-6">
             {children}
         </p>
     </details>

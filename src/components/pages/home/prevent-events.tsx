@@ -16,7 +16,7 @@ export const PreventEventsSection = () => {
                 </h2>
 
                 <button
-                    className="hidden sm:flex cursor-pointer items-center justify-center gap-2 uppercase font-bold">
+                    className="hover:text-accent duration-200 hidden sm:flex lg:hidden cursor-pointer items-center justify-center gap-2 uppercase font-bold">
                     Все события <ArrowTightIcon/>
                 </button>
             </div>
@@ -46,7 +46,7 @@ export const PreventEventsSection = () => {
             </div>
 
             <button
-                className="ml-auto mt-6 flex sm:hidden cursor-pointer items-center justify-center gap-2 uppercase font-bold">
+                className="hover:text-accent duration-200 ml-auto mt-6 flex sm:hidden cursor-pointer items-center justify-center gap-2 uppercase font-bold">
                 Все события <ArrowTightIcon/>
             </button>
         </div>

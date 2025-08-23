@@ -8,7 +8,7 @@
     --color-primary: #F7F8FA;
     --color-secondary: #EAF2F9;
     --color-tertiary: #B1CFE833;
-    --color-quaternary: #E3E2E2;
+    --color-quaternary: #E2E2E2;
     --color-danger: #771139;
     --color-accent: #4D71B6;
 
@@ -81,7 +81,7 @@
 }
 
 .blurred-card {
-    @apply backdrop-blur-sm gap-3 p-6 lg:p-5 flex flex-row lg:flex-col items-center lg:items-start justify-between cursor-pointer;
+    @apply backdrop-blur-sm bg-quaternary/50 gap-3 p-6 lg:p-5 flex flex-row lg:flex-col items-center lg:items-start justify-between cursor-pointer;
     transition: 200ms
 }
 
@@ -186,9 +186,10 @@
 .card-triangle {
     content: '';
     position: absolute;
-    bottom: -30px;
+    bottom: -31px;
     right: 0;
     border-left: 30px solid transparent;
     border-bottom: 30px solid transparent;
     border-right: 50px solid currentColor;
+    border-top: 1px solid;
 }

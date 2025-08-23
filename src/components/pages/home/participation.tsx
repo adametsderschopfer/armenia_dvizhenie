@@ -37,11 +37,15 @@ export const ParticipationSection = () => {
                         </div>
                         <div className="flex gap-1 w-full">
                             <div className="icon-tag icon-tag-text flex-1">Без развала институтов</div>
-                            <div className="icon-tag icon-tag-icon"><CompassIcon/></div>
+                            <div className="icon-tag icon-tag-icon"><ArrowFallIcon/></div>
                         </div>
                         <div className="flex gap-1 w-full">
-                            <div className="icon-tag icon-tag-icon"><ArrowFallIcon/></div>
+                            <div className="icon-tag icon-tag-icon"><CompassIcon/></div>
                             <div className="icon-tag icon-tag-text flex-1">Без обнищания</div>
+                        </div>
+                        <div className="flex gap-1 w-full">
+                            <div className="icon-tag icon-tag-text flex-1">Без подчинения</div>
+                            <div className="icon-tag icon-tag-icon"><CompassIcon/></div>
                         </div>
                     </div>
 

@@ -44,8 +44,8 @@ export const HeadNewsSection: FC<IHeadNewsSectionProps> = (
                 backgroundImage: `url(${currentBackgroundUrl})`,
             }}
         >
-            <div className="z-1 absolute top-18 sm:top-20 md:top-16 lg:top-24 right-2 sm:right-4 md:right-0 md:left-0 lg:left-[initial] lg:right-8 md:backdrop-blur-sm lg:backdrop-blur-none p-6 bg-quaternary/60 md:bg-quaternary/50 lg:bg-quaternary/60 max-w-42 text-white">
-                <div className="mb-2 font-bold text-xl">1 236</div>
+            <div className="z-1 absolute top-18 sm:top-20 md:top-16 lg:top-24 right-2 sm:right-4 md:right-0 md:left-0 lg:left-[initial] lg:right-8 md:backdrop-blur-sm lg:backdrop-blur-none p-4 sm:p-6 bg-quaternary/60 md:bg-quaternary/50 lg:bg-quaternary/60 max-w-38 sm:max-w-42 text-white">
+                <div className="mb-1 sm:mb-2 font-bold text-[28px] leading-[100%] sm:text-xl">1 236</div>
                 <div className="">
                     единомышленников с нами
                 </div>
@@ -60,7 +60,7 @@ export const HeadNewsSection: FC<IHeadNewsSectionProps> = (
                 title={'НОВОСТИ'}
             />
 
-            <div className="z-1 flex items-start lg:items-center mb-22 justify-between w-full flex-col lg:flex-row">
+            <div className="z-1 flex items-start lg:items-center mb-12 sm:mb-22 justify-between w-full flex-col lg:flex-row">
                 <Swiper
                     modules={[Autoplay, Pagination]}
 
@@ -84,7 +84,7 @@ export const HeadNewsSection: FC<IHeadNewsSectionProps> = (
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>
                             <div
-                                className="cursor-default text-[34px] leading-[100%] sm:text-2xl font-bold text-white max-w-167">
+                                className="cursor-default text-[28px] leading-[100%] sm:text-2xl font-bold text-white max-w-167">
                                 {slide.title}
                             </div>
                         </SwiperSlide>

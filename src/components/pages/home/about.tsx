@@ -15,7 +15,7 @@ export const AboutSection = () => {
                 Наше движение родилось из веры в то, что перемены возможны
             </h2>
 
-            <div className="relative flex flex-col max-w-[1375px] ml-auto gap-2 sm:gap-4 lg:gap-8">
+            <div className="relative flex flex-col max-w-[1015px] lg:max-w-[1375px] ml-auto gap-2 sm:gap-4 lg:gap-8">
                 <AboutCard
                     imageSrc={'/example/person.png'}
                     fullName={"Артак Геворгян 1"}

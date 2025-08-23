@@ -1,6 +1,6 @@
 'use client'
 
-import {Swiper, SwiperClass, SwiperRef, SwiperSlide} from "swiper/react";
+import {Swiper, SwiperClass, SwiperSlide} from "swiper/react";
 import {ArrowTightIcon} from "@/assets/icons";
 import Image from "next/image";
 import {forwardRef} from "react";

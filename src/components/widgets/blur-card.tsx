@@ -54,12 +54,12 @@ export const BlurCard: FC<IMessageCardProps> = ({active, imageSrc, title, descri
             </div>
 
             <div className="flex justify-between w-full mt-auto">
-                <div className={[
+                <a className={[
                     active ? "flex" : "hidden",
-                    "lg:mt-0 mt-auto uppercase items-center gap-2 lg:pl-0 px-4 sm:px-6 font-bold"
+                    "duration-200 hover:text-accent lg:mt-0 mt-auto uppercase items-center gap-2 lg:pl-0 px-4 sm:px-6 font-bold"
                 ].join(' ')}>
                     Подробнее <ArrowTightIcon/>
-                </div>
+                </a>
 
                 {!isTablet && (
                     <ArrowCircleIcon

@@ -45,9 +45,10 @@ export const GoalsAndMissionSection = () => {
 
     return (
         <section
-            className="bg-top bg-cover"
+                className="bg-top bg-cover"
             style={{
                 backgroundImage: !isTablet ? `url(${goals[activeGoalIndex]?.imageSrc})` : undefined,
+                transition: "background-image 1000ms"
             }}
         >
             <div className="lg:bg-black/20">
